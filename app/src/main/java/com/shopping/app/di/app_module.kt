@@ -1,5 +1,6 @@
 package com.shopping.app.di
 
+import com.shopping.app.api.repo.HomeRepo
 import com.shopping.app.api.repo.NewRepo
 import com.shopping.app.ui.feed.FeedViewModel
 import com.shopping.app.ui.home.HomeViewModel
@@ -17,7 +18,8 @@ val appModule = module {
     single { NewRepo(get(named("DEFAULT"))) }
     viewModel { MainViewModel(get()) }
 
-    viewModel { HomeViewModel() }
+    single { HomeRepo(get(named("DEFAULT"))) }
+    viewModel { HomeViewModel(get()) }
     viewModel { WalletViewModel() }
     viewModel { FeedViewModel() }
     viewModel { InboxViewModel() }
