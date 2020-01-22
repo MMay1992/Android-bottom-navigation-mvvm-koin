@@ -7,7 +7,7 @@
 
         <variable
             name="news"
-            type="com.watch.clip.android.vo.NewsResponse" />
+            type="com.shopping.app.vo.NewsResponse" />
     </data>
 
     <androidx.cardview.widget.CardView

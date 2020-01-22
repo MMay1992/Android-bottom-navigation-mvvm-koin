@@ -1,6 +1,9 @@
 <resources>
-    <string name="app_name">WatchClip</string>
+    <string name="app_name">Shopping</string>
 
     <string name="title_home">Home</string>
-    <string name="title_wallet">Wallet</string>
+    <string name="title_feed">Feed</string>
+    <string name="title_inbox">Inbox</string>
+    <string name="title_notification">Notification</string>
+    <string name="title_me">Me</string>
 </resources>
